@@ -7,7 +7,8 @@
 
 .login{
     background-color: #829de7;
-    background-image: url(back-school-background-with-school-supplies-copy-space_23-2148958977.webp);
+    background-image: url(study.jpg);
+    
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -16,13 +17,53 @@
     background-attachment: fixed;
 
     
-    padding-top: 200px;
-    padding-bottom: 200px;
+    
 }
 
-.idk{
-    position:relative; 
-    opacity: 0.8;
-    width: 600px;
-    height: auto;
+.friend{
+    font-family:'Courier New', Courier, monospace;
+    color:black;
+    size: 12;
+    
+}
+
+div.scroll {
+    background-image: url(paper.jpg);
+    width: 700px;
+    height: 600px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    text-align: center;
+    padding: 20px;
+
+    border-style:groove;
+    border-width: 10px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-color:black;
+    border-radius: 10;
+  }
+  .button1{
+    font-size:large;
+    color: #fff;
+    border:none;
+    background-color:#1b1b70;
+    padding: 6px 32px;
+    border-radius:30px;
+    size: 5px;
+    box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+    
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+}
+
+
+.button1.hover {
+    background-color:#ede6df;
+    transition: 3s;
+}
+
+.button1:focus {
+    outline-color: transparent;
+    outline-style:solid;
+    box-shadow: 0 0 0 4px #080323;
 }

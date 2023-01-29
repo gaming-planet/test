@@ -1,6 +1,8 @@
+
+    
 .sike{
     background-color:bisque;
-    background-image: url(good.jpg);
+    background-image: url(Screenshot\ 2023-01-28\ 202424.png);
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -20,7 +22,7 @@
     padding:0.25em;
     padding-left: 3em;
     z-index: 1;
-    top:-3%;
+    
     position: absolute;
 }
 
@@ -29,8 +31,6 @@
     height:4em;
     z-index:4;
     position: absolute;
-    top:5%;
-    left:2%;
 }
 
 .menu{
@@ -85,8 +85,8 @@
 }
 
 .h-100{
-    top:30%;
-    left:15%;
+    top:40%;
+    left:40%;
     position: absolute;
     font-size: 1.5em;
     width:15em;

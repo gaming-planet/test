@@ -8,41 +8,50 @@
     </head>
 
     <body class="sike">
-
+	<center>
+		<h1>Sign up</h1>
 		
 
-	<div class="h-100">
-		
-		<form method="POST" class="needs-validation" novalidate="" autocomplete="off">
+		<div class="h-100">
+			
+			<form method="POST" class="needs-validation" novalidate="" autocomplete="off">
+									
+				<label class="mb-2 text-muted" for="name">Name:</label>
+				<input id="name" type="text" class="form-control" name="name" value="" required autofocus>
+				<div class="invalid">
+					Name is required	
+				</div>
+			
+				<label class="mb-2 text-muted" for="email">E-Mail Address:</label>
+				<input id="email" type="email" class="form-control" name="email" value="" required>
+				<div class="invalid">
+					Email is invalid
+				</div>
+												
+				<label class="mb-2 text-muted" for="password">Password:</label>
+				<input id="password" type="password" class="form-control" name="password" required>
+				<div class="invalid">
+					Password is required
+				</div>
+
+				<div>
+				<label class="mb-2 text-muted" for="password">Re-enter Password:</label>
+				<input id="password" type="password" class="form-control" name="password" required>
+				<div class="invalid">
+					Password is required
+				</div>
+									
+				<button type="submit" class="btn btn-primary ms-auto">
+					Register	
+				</button>
 								
-			<label class="mb-2 text-muted" for="name">Name</label>
-			<input id="name" type="text" class="form-control" name="name" value="" required autofocus>
-			<div class="invalid">
-				Name is required	
-			</div>
-		
-			<label class="mb-2 text-muted" for="email">E-Mail Address</label>
-			<input id="email" type="email" class="form-control" name="email" value="" required>
-			<div class="invalid">
-				Email is invalid
-			</div>
-											
-			<label class="mb-2 text-muted" for="password">Password</label>
-			<input id="password" type="password" class="form-control" name="password" required>
-			<div class="invalid">
-				Password is required
-			</div>
+			</form>
+							
+			<p>Already have an account? <a href="login.html" class="text-dark">Login</a></p>
 								
-			<button type="submit" class="btn btn-primary ms-auto">
-				Register	
-			</button>
-							
-		</form>
-						
-		<p>Already have an account? <a href="login.html" class="text-dark">Login</a></p>
-							
-	</div>
-        
-
+		</div>
+			
+	
+	</center>
     </body >
 </htlm>
