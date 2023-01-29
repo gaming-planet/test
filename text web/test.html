@@ -1,0 +1,185 @@
+html>
+    <head>
+        <title>User login</title>
+        <style>
+            .login{
+                background-color:bisque;
+                background-image: url(a\ lot.webp);
+                -webkit-background-size: cover;
+                -moz-background-size: cover;
+                -o-background-size: cover;
+                background-size: cover;
+                background-position: center;
+            
+                padding-top: 250px;
+                padding-bottom: 300px;
+            }
+            
+            .input {
+                width:200px;
+                height: 30px;
+                
+            }
+            
+            .button1{
+                font-size:large;
+                color: #fff;
+                border:none;
+                background-color:#1b1b70;
+                padding: 6px 32px;
+                border-radius:30px;
+                size: 5px;
+                box-shadow: 0px 0px 2px 2px rgb(0,0,0);
+                
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif
+            }
+            
+            
+            .button1.hover {
+                background-color:#ede6df;
+                transition: 3s;
+            }
+            
+            .button1:focus {
+                outline-color: transparent;
+                outline-style:solid;
+                box-shadow: 0 0 0 4px #080323;
+            }
+        
+            @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap");
+            
+            * {
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+            
+            body {
+                min-height: 100vh;
+                display: grid;
+                place-items: center;
+            
+                --bkg: #5eb3fd;
+                --white: #e7e6e6;
+            
+                background-color: var(--white);
+                background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+            }
+            
+            .container {
+                width: 100%;
+                height: 100%;
+                display: grid;
+                place-items: center;
+                overflow: hidden;
+            }
+            
+            .title {
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+            .title h1 {
+                font-size: 25vmin;
+                font-weight: 900;
+                font-family: "Montserrat", sans-serif;
+                color: black;
+            }
+            
+            .ghost {
+                width: 8vmin;
+                height: 12vmin;
+                background-color: var(--white);
+                background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+                background-image: radial-gradient(ellipse at 35% 40%, #000 8%, transparent 0%),
+                    radial-gradient(ellipse at 65% 40%, #000 8%, transparent 0%),
+                    radial-gradient(ellipse at 50% 60%, #000 8%, transparent 0%);
+                border-radius: 100% / 70% 70% 0% 0%;
+                transform: translateX(100em) rotateZ(-90deg);
+                position: relative;
+                opacity: 0.9;
+                mix-blend-mode: exclusion;
+                animation: ghostMove 4s ease-out infinite;
+            }
+            @keyframes ghostMove {
+                0% {
+                    transform: translateX(30em) rotateZ(-90deg);
+                }
+                100% {
+                    transform: translateX(-35em) rotateZ(-90deg);
+                }
+            }
+            .ghost div {
+                position: absolute;
+                width: 20%;
+                background-color: var(--white);
+                background-image: url("https://www.transparenttextures.com/patterns/concrete-wall.png");
+            }
+            .ghost div:nth-of-type(1) {
+                height: 7vmin;
+                left: 0;
+                bottom: -6vmin;
+                border-radius: 100% / 0% 0% 50% 50%;
+            }
+            .ghost div:nth-of-type(2),
+            .ghost div:nth-of-type(4) {
+                height: 4vmin;
+                left: 20%;
+                bottom: -3vmin;
+                border-radius: 100% / 50% 50% 0% 0%;
+                background-color: transparent;
+            }
+            .ghost div:nth-of-type(3) {
+                height: 4vmin;
+                left: 40%;
+                bottom: -3.95vmin;
+                border-radius: 100% / 0% 0% 60% 60%;
+                background-color: var(--white);
+            }
+            .ghost div:nth-of-type(4) {
+                left: 60%;
+            }
+            .ghost div:nth-of-type(5) {
+                height: 3vmin;
+                left: 80%;
+                bottom: -2.9vmin;
+                border-radius: 100% / 0% 0% 70% 70%;
+                background-color: var(--white);
+            }
+            
+            </style>
+    </head>
+    <body class="login">
+        <center>
+            
+        <div class="container">
+            <div class="title">
+                <h1>LOGIN</h1>
+            </div>
+            <div class="ghost">
+                <div></div>
+                
+            </div>
+        </div>
+        
+        <form >
+            Username: <input type="text" name="username" placeholder="Enter Username" class="input"><br>
+            <br>
+            Password: <input type="password" name="password" placeholder="Enter Password" class="input">
+            
+        </form>
+        <br>
+        <a href="table.html">
+            <button class="button1">
+                Login
+            </button>
+        </form>
+        </a>
+
+        
+
+        </center>
+        
+    </body>
+</html>
